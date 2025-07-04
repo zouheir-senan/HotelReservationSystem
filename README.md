@@ -34,9 +34,9 @@ BookingService - handles booking operations
 
 ### Alternative approache:
 
-**Problem**: If room price changes, old bookings show new price (WRONG!)
+**Problem**: If room price changes, old bookings show new price 
 
-#### Option 2: Room versioning with references (RECOMMENDED)
+#### Option 2: Room versioning with references 
 ```java
 // Each room change creates new version
 record RoomVersion(int roomNumber, int version, RoomType type, int price, Date validFrom)
